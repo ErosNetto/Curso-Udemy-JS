@@ -1,0 +1,44 @@
+<!-- Modelo HTML e CSS para exercícios posteriores 13/12/22 -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Calcule seu IMC</title>
+</head>
+<body>
+    
+    <section class="container">
+        <h1>Tabela IMC</h1>
+
+        <!-- <p>IMC</p> -->
+
+        IMC                  resultado
+        menos do que 18,5    abaixo do peso
+        entre 18,5 e 24,9    peso normal
+        entre 25 e 29,5      sobrepeso
+        entre 30 e 34,9      obesidade grau 1
+        entre 35 e 39,9      obesidade grau 2
+        mais do que 40       obesidade grau 3
+
+        <h2>Calcule seu IMC</h2>
+        
+        <form action="" id="formulario" method="POST">
+
+            <label for="peso">Peso:</label>
+            <input type="text" id="peso" name="peso">
+
+            <label for="altura">Altura:</label>
+            <input type="text" id="altura" name="altura">
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

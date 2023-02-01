@@ -1,0 +1,14 @@
+/*
+    initial = desativa a herança do elemento
+    inherit = ativa a herança do elemento
+*/
+
+body {
+    font-family: sans-serif;
+    color: red;
+    font-size: 70px;
+}
+
+p {
+    font-size: initial;
+}

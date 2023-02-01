@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex; /* Flex(block)  inline-flex */
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap; /* Ou flex-wrap: wrap;  e flex-direction */
+    background: yellow;
+    height: 800px;
+}
+
+.flex-item {
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 320px;*/
+    /* flex: 1 1 320px; Atalho dos Flex (Grow, shrink e basis) */
+    width: 100%;
+    color: #fff;
+    background: red;
+}
+
+.flex-item:nth-child(1) {
+    order: 1;
+}

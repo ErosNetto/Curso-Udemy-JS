@@ -1,0 +1,60 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.heading {
+    transition: all 0.4s ease-in-out;
+}
+
+.heading:hover {
+    background: red;
+}
+
+a {
+    color: darkorange;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: darkgreen;
+}
+
+a:hover {
+    background: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    background: dimgray;
+    color: white;
+    text-decoration: none;
+}
+/*
+input:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:enabled {
+    background-color: aqua;
+    cursor: not-allowed;
+}
+*/
+
+input:checked  + p {
+    background-color: red;
+}
+
+.pai .lista li:last-child {
+    background: red;
+}
+
+input:required {
+    background: red;
+}

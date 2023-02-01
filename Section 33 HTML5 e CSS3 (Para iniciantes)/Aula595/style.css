@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.col-content {
+    width: 300px;
+    height: 300px;
+    color: #FFF;
+    /* background: red; Por Nome */
+    /* background: #fff; Por Hexadecimal ABCDEF123456789 */
+    /* background: rgb(66, 158, 120); Por RGB vai de 0 a 255 */
+    /* background: rgba(69, 138, 52, 0.644); Por RGBa vai de 0 a 255 e o ultimo é a opacidade que vai de 0 a 1 */
+    /* background: hsl(175, 43%, 54%); */
+    background: rgba(17, 100, 93, 0.575);
+}

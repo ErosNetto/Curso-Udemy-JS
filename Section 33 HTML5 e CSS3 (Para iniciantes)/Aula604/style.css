@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;   /* Eixo principal(main axis) flex-start / center / flex-end / space-evenly / space-between / space-around */ 
+    flex-wrap: wrap;
+    align-items: flex-start;   /* Eixo secundario(cross axis) flex-start / center / flex-end / baseline / stretch*/
+    align-content: center;
+    background: yellow;
+    height: 640px;
+}
+
+.flex-item {
+    width: 33.33%;
+    color: #fff;
+    background: red;
+}
