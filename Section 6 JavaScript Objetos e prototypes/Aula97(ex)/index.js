@@ -20,12 +20,22 @@ Se o número = digito for maior que 9, considermos 0.
 705.484.450-52 === 705.484.450-52
 */
 
+// Minha Resolução
+
 let cpf = '705.484.450-52';
 let cpfLimpo = cpf.replace(/\D+/g, '');
-console.log(cpfLimpo);
+let cpfArray = Array.from(cpfLimpo);
 
-cpfArray = Array.from(cpfLimpo);
-console.log(cpfArray.map(el => el));
-console.log(cpfArray.reduce((ac, val) => ac + Number(val), 0));
+let cpfPrimeiro = [...cpfArray];
 
-// Minha Resolução
+let index2 = 10;
+for (let index = 0; index <= 8; index++) {
+    for (; index2 >= 2;) {
+        cpfPrimeiro[index] = cpfPrimeiro[index] * index2;
+        index2--;
+        break;
+    }
+}
+
+let primeiroDigito = 11 - ((cpfPrimeiro.reduce((ac, val) => ac + Number(val), 0)) % 11);
+console.log(primeiroDigito);
