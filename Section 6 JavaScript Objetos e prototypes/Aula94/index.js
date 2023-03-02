@@ -1,6 +1,7 @@
 // Manipulando Prototypes 27/02/23
 
-/*// new Object -> Object.Prototypes
+/*
+// new Object -> Object.Prototypes
 const objA = {
     chaveA: 'A'
     // __proto__: Object.Prototypes
@@ -11,8 +12,10 @@ const objB = {
     // __proto__: Object.Prototypes
 };
 Object.setPrototypeOf(objB, objA);
-console.log(objB.chaveA);*/
+console.log(objB.chaveA);
+*/
 
+// Outro exemplo
 
 function Produto(nome, preco) {
     this.nome = nome;

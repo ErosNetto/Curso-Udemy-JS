@@ -26,7 +26,8 @@ Conta.prototype.verSaldo = function() {
     console.log(`Agencia: ${this.agencia} Conta: ${this.conta} | Saldo: R$${this.saldo.toFixed(2)}`);
 };
 
-function CC(agencia, conta, saldo, limite) { // Conta Corrente
+// Conta Corrente
+function CC(agencia, conta, saldo, limite) { 
     Conta.call(this, agencia, conta, saldo);
     this.limite = limite;
 }
@@ -43,7 +44,8 @@ CC.prototype.sacar = function(valor) {
     this.verSaldo();
 };
 
-function CP(agencia, conta, saldo) { // Conta Poupança
+ // Conta Poupança
+function CP(agencia, conta, saldo) {
     Conta.call(this, agencia, conta, saldo);
 }
 CP.prototype = Object.create(Conta.prototype);

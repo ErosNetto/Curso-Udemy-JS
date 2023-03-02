@@ -1,19 +1,36 @@
 // Prototypes 27/02/23
 
-// Contrutora -> molde (classe)
+// Construtora -> molde (classe)
+/*
+function Pessoa(nome,sobrenome) {
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+    this.nomeCompleto = () => this.nome + ' ' + this.sobrenome; // Desta maneira, essa função é recriada a cada nova pessoa (fica uma aplicação muito mal otimizada)
+};
+
+// Intância
+const p1 = new Pessoa('Eros', 'Netto') // <- Pessoa = Função construtora
+const p2 = new Pessoa('Luiz', 'O.') // <- Pessoa = Função construtora.
+
+console.log(p1);
+console.log(p2);*/
+
+
+
+//UTILIZANDO PROTOTYPE
 function Pessoa(nome, sobrenome) {
     this.nome = nome;
-    this.sobrenhome = sobrenome;
+    this.sobrenome = sobrenome;
     // this.nomeCompleto = () => this.nome + ' ' + this.sobrenhome;
 }
 
-// Pessoa.prototype === pessoa1.__proto__
-
 Pessoa.prototype.nomeCompleto = function() {
-    return this.nome + ' ' + this.sobrenhome;
+    return this.nome + ' ' + this.sobrenome;
 };
 
 // instãncia
-const pessoa1 = new Pessoa('Eros', 'N.') // <- Pessoa = função construtora
-const pessoa2 = new Pessoa('Luiz', 'O.') // <- Pessoa = função construtora
-const data = new Date() // <- Date = função construtora
+const p1 = new Pessoa('Eros', 'Netto') // <- Pessoa = função construtora
+const p2 = new Pessoa('Luiz', 'O.') // <- Pessoa = função construtora
+
+console.log(p1);
+console.log(p2);
