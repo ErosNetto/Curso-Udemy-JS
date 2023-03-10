@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --cor-primaria: rgb(2, 114, 241);
+    --cor-primaria-escura: rgb(2, 69, 146);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-primaria);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background-color: var(--cor-primaria);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 220px;
+}
+
+button:hover {
+    background-color: var(--cor-primaria-escura);
+}
+
+button:active {
+    background-color: green;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cpf-gerado {
+    font-size: 2em;
+    color: var(--cor-primaria);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+}
