@@ -1,0 +1,39 @@
+Atualiza: ^ = minor patch
+Atualiza: ~ = patch
+
+2.    1.    0
+major minor patch
+
+2.1.1
+2.2.0
+3.0.0
+
+patch = Correções e Bugs
+
+minor = Criar ou adicionar um recurso novo com compatibilidade da mesma versão
+
+major = Muda a compatibilidade com as outras versões
+
+
+Comandos: 
+
+npm init -y
+
+npm install express
+
+npm install express --save-dev
+npm install express --save-prod
+
+npm install express -E
+
+npm install express@2.1.1
+
+npm ls
+
+npm ls --depth=0
+
+npm outdated
+
+npm update
+
+npm install express@4.x
