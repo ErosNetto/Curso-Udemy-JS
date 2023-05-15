@@ -32,5 +32,6 @@ module.exports = {
     'react/jsx-no-bind': 0,
     'react/react-in-jsx-scope': 'off',
     'no-unused-expressions': 0,
+    'react/jsx-no-useless-fragment': 'off',
   },
 };
