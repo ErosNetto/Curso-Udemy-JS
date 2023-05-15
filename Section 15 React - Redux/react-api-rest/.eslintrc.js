@@ -30,5 +30,7 @@ module.exports = {
     'import/no-extraneous-dependencies': 0,
     'default-param-last': 0,
     'react/jsx-no-bind': 0,
+    'react/react-in-jsx-scope': 'off',
+    'no-unused-expressions': 0,
   },
 };

@@ -19,8 +19,13 @@ export const Form = styled.form`
     padding: 0 10px;
     border-radius: 5px;
     margin-top: 5px;
+    transition: all 300ms;
 
     &:focus {
+      border: 1px solid ${colors.primaryColor};
+    }
+
+    &:hover {
       border: 1px solid ${colors.primaryColor};
     }
   }
