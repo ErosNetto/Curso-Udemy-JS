@@ -1,4 +1,5 @@
 import * as types from '../types';
+import axios from '../../../services/axios';
 
 const initialState = {
   isLoggedIn: false,
@@ -8,7 +9,7 @@ const initialState = {
 };
 
 // eslint-disable-next-line
-export default function(state = initialState, action) {
+export default function (state = initialState, action) {
   switch (action.type) {
     case types.LOGIN_SUCCESS: {
       const newState = { ...state };
@@ -20,6 +21,7 @@ export default function(state = initialState, action) {
     }
 
     case types.LOGIN_FAILURE: {
+      delete axios.defaults.headers.Authorization;
       const newState = { ...initialState };
       return newState;
     }
