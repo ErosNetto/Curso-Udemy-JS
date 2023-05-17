@@ -33,5 +33,6 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'no-unused-expressions': 0,
     'react/jsx-no-useless-fragment': 'off',
+    // 'no-unused-vars': 'off',
   },
 };
