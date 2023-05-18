@@ -101,8 +101,8 @@ export default function Register() {
               e.preventDefault();
               if (id) axios.delete(`/users`);
               dispatch(actions.loginFailure());
-              history('/register');
               toast.success('Usuário deletado com sucesso.');
+              history.push('/register');
             }}
           >
             Deletar conta
