@@ -3,6 +3,8 @@ import { toast } from 'react-toastify';
 import { isEmail } from 'validator';
 import { useSelector, useDispatch } from 'react-redux';
 
+import history from '../../services/history';
+import axios from '../../services/axios';
 import { Container } from '../../styles/GlobalStyles';
 import { Form } from './styled';
 import Loading from '../../components/Loading';
@@ -10,6 +12,7 @@ import * as actions from '../../store/modules/auth/actions';
 
 export default function Register() {
   const dispatch = useDispatch();
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
 
   const id = useSelector((state) => state.auth.user.id);
   const nomeStored = useSelector((state) => state.auth.user.nome);
@@ -90,6 +93,21 @@ export default function Register() {
         </label>
 
         <button type="submit">{id ? 'Salvar' : 'Criar conta'}</button>
+
+        {isLoggedIn && (
+          <button
+            type="submit"
+            onClick={(e) => {
+              e.preventDefault();
+              if (id) axios.delete(`/users`);
+              dispatch(actions.loginFailure());
+              history('/register');
+              toast.success('Usuário deletado com sucesso.');
+            }}
+          >
+            Deletar conta
+          </button>
+        )}
       </Form>
     </Container>
   );

@@ -22,7 +22,7 @@ export default function Header() {
     e.preventDefault();
     dispatch(actions.loginFailure());
     toast.warn('Você saiu!');
-    history.push('/');
+    history.push('/login');
   };
 
   return (
